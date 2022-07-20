@@ -17,11 +17,12 @@ public class RestauranteController : ControllerBase
 
     public RestauranteController(
         IRestauranteRepository repository,
-        IMapper mapper, IItemServiceHttpClient itemServiceHttpClient)
+        IMapper mapper,
+        IItemServiceHttpClient itemServiceHttpClient)
     {
         _repository = repository;
         _mapper = mapper;
-        _itemServiceHttpClient = itemServiceHttpClient;
+        _itemServiceHttpClient = itemServiceHttpClient
     }
 
     [HttpGet]

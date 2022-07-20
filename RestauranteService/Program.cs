@@ -20,6 +20,8 @@ builder.Services.AddScoped<IRestauranteRepository, RestauranteRepository>();
 
 builder.Services.AddHttpClient<IItemServiceHttpClient, ItemServiceHttpClient>();
 
+builder.Services.AddHttpClient<IItemServiceHttpClient, ItemServiceHttpClient>();
+
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 builder.Services.AddSwaggerGen(c =>
